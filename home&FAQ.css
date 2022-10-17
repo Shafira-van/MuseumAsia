@@ -13,130 +13,197 @@ body {
   object-fit: cover;
   display: flex;
   flex-direction: column;
+  color: #3e3e3b;
 }
- 
+
 .navbar {
   background-color: #4c586f;
   margin-bottom: 4vw;
-  color : #ebeced;
+  color: #ebeced;
+  font-size: 1.6vw;
 }
+
 .logo {
-    display: flex;
-}
-.navbar img{
-    width : 2vw;
-}
-.container-fluid{
-    display: flex;
-    justify-content: space-between;
-    margin : 0vw 2vw;
-}
-
-.navbar-nav{
   display: flex;
-  flex-direction: row; 
 }
 
-.navbar li{
-    margin : 1vw;
+.navbar img {
+  width: 2vw;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  margin: 0vw 2vw;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li {
+  margin: 1vw;
 }
 
 /* header */
 header {
-    
-    width: 100%;
-    height: auto;
-    padding: 2vw;
-  }
 
-  .konten {
-    display: flex;
-    align-items: center;
-  }
-
-  .header img {
-    width: 40%;
-    object-fit: cover;
-    padding: 0 6vw;
-  }
-    
-  .header h1 {
-    font-size: 5vw;
-    font-weight: bold;
-  }
-  
-  .header p {
-   font-size: 3vw;
-  }
-
-  /* isi konten */
-  .carousel-inner .col{
-    display:flex;
-    justify-content: center;
-    margin:0;
-    padding:0;
-  }
-
-  .card a{
-    margin : 0 2vw;
-    width : 10vw;
-  }
-
-  .carousel-control-next{
-    padding-left: 4vw;
-    
-  }
-  .carousel-control-prev{
-    padding-right: 4vw;
-    
-  }
-
- 
-  /* container */
-  h2 {
-    margin :2vw 11vw;
-
-  }
-  .container-dev {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:0 11vw;
+  width: 100%;
+  height: auto;
+  padding: 2vw;
 }
-    .container-dev #card-body{
-        text-align: left;
-    }
 
-    .container-dev .card{
-        width : 100%;
-    }
+.konten {
+  display: flex;
+  align-items: center;
+}
 
-    .container-dev #rowDev{
-        align-items: center;
-        display : flex;
-        flex-direction: row;
-    }
-    .col-md-4 img{
-        width : 30vw;
-    }
+.header img {
+  width: 40%;
+  object-fit: cover;
+  padding: 0 6vw;
+}
+
+.header h1 {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 3vw;
+}
+
+/* isi konten */
+.carousel-inner .col {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-inner .card {
+  background-color: #a2aab0;
+  width: 20vw;
+  height: 42vw;
+  color: white;
+  position: relative;
+
+}
+
+.carousel-inner img {
+  height: 20vw;
+  object-fit: cover;
+
+}
+
+.carousel-inner .card h5 {
+  font-size: 2.4vw;
+}
+
+.carousel-inner .card p {
+  font-size: 1.4vw;
+}
+
+.card a {
+  margin: 0 3.4vw;
+  width: 10vw;
+  position: absolute;
+  bottom: 2vw;
+  background-color: #4c586f;
+  border: 1px solid #4c586f;
+  border-radius: 2vw;
+}
+
+.carousel-inner .card-text {
+  margin: 0vw;
+
+}
+
+.carousel-control-next {
+  padding-left: 4vw;
+
+}
+
+.carousel-control-prev {
+  padding-right: 4vw;
+
+}
 
 
-  /* footer */
+/* container */
+h2 {
+  margin: 2vw 11vw;
+
+}
+
+.container-dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 11vw;
+}
+
+.container-dev .card {
+  background-color: #a2aab0;
+}
+
+.col-md-4 img {
+  width: 4vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.container-dev #card-body {
+  text-align: left;
+  color: white;
+}
+
+.container-dev .card {
+  width: 100%;
+}
+
+.container-dev #rowDev {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.col-md-4 img {
+  width: 30vw;
+}
+
+.container-dev h5 {
+  font-size: 3vw;
+  color: white;
+  font-weight: bold;
+}
+
+.container-dev p {
+  font-size: 2vw;
+  padding: 0vw;
+  margin: 0vw;
+}
+
+/* footer */
 footer {
   padding: 0vw 2vw 0vw 2vw;
-  background-color: black;
+  background-color: #3e3e3b;
   height: 100%;
   width: 100%;
   position: relative;
   margin-top: 4vw;
   margin-bottom: 0;
 }
-footer h2{
-    color: white;
-    margin-left: 2vw;
+
+footer h2 {
+  color: white;
+  margin-left: 2vw;
 }
+
 footer p {
-  background-color: black;
+  background-color: #3e3e3b;
   color: white;
   margin-left: 2vw;
 }
@@ -158,5 +225,3 @@ footer p {
     width: auto;
     font-size: 2.8vw;
   }
-
- 

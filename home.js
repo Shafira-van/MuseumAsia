@@ -1,13 +1,12 @@
-let col = document.querySelector(".container-dev");
+let dev = document.querySelector(".container-dev");
 
-let getData = async () => {
+let getProfil = async () => {
   let response = await fetch(
     `https://634aa22e5df9528514155265.mockapi.io/webDev/fe28/developer`
   );
-  let movie = await response.json();
+  let profil = await response.json();
   let print = "";
-  console.log(movie);
-  movie.forEach((item) => {
+  profil.forEach((item) => {
     console.log(item);
     print += `<div class="card mb-3">
    <div class="row g-0" id="rowDev">
@@ -27,7 +26,7 @@ let getData = async () => {
      </div>
    </div>
  </div>`;
-    col.innerHTML = print;
+    dev.innerHTML = print;
   });
   let displayKhai = document.querySelectorAll("#rowDev");
   displayKhai[1].style.flexDirection = "row-reverse";
@@ -35,86 +34,79 @@ let getData = async () => {
   titleKhai[1].style.textAlign = "right";
 };
 
-getData();
+getProfil();
 
-let col1 = document.querySelector(".carousel-inner #row1");
-let col2 = document.querySelector(".carousel-inner #row2");
-let col3 = document.querySelector(".carousel-inner #row3");
+let car1 = document.querySelector(".carousel-inner #row1");
+let car2 = document.querySelector(".carousel-inner #row2");
+let car3 = document.querySelector(".carousel-inner #row3");
 
-let getData2 = async () => {
+let getBarang = async () => {
   let response = await fetch(
     `https://634aa22e5df9528514155265.mockapi.io/webDev/fe28/carousel`
   );
-  let movie2 = await response.json();
+  let barang = await response.json();
   let print2 = "";
-  console.log(movie2);
-  movie2.splice(0,4).forEach((item) => {
+  barang.splice(0, 4).forEach((item) => {
     console.log(item);
     print2 += `<div class="col">
-    <div class="card" style="width: 14rem">
+    <div class="card" >
       <img src="${item.img}" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">${item.object_name}</h5>
-        <p class="card-text">
-        ${item.description}
+        <p class="card-text" >
+        ${item.provenience}
         </p>
         <p class="card-text">
-        ${item.provenience}
+        ${item.description}
         </p>
         <a href="${item.url}" class="btn btn-primary">Click Here</a>
       </div>
     </div>
   </div>`;
-    col1.innerHTML = print2;
+    car1.innerHTML = print2;
   });
 
-  let print3=""
-  console.log(movie2);
-  movie2.splice(0,4).forEach((item) => {
+  let print3 = "";
+  barang.splice(0, 4).forEach((item) => {
     console.log(item);
     print3 += `<div class="col">
-    <div class="card" style="width: 14rem">
+    <div class="card">
       <img src="${item.img}" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">${item.object_name}</h5>
-        <p class="card-text">
-        ${item.description}
+        <p class="card-text" >
+        ${item.provenience}
         </p>
         <p class="card-text">
-        ${item.provenience}
+        ${item.description}
         </p>
         <a href="${item.url}" class="btn btn-primary">Click Here</a>
       </div>
     </div>
   </div>`;
-    col2.innerHTML = print3;
+    car2.innerHTML = print3;
   });
 
-  let print4=""
-  console.log(movie2);
-  movie2.splice(0,4).forEach((item) => {
+  let print4 = "";
+  barang.splice(0, 4).forEach((item) => {
     console.log(item);
     print4 += `<div class="col">
-    <div class="card" style="width: 14rem">
+    <div class="card" >
       <img src="${item.img}" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">${item.object_name}</h5>
-        <p class="card-text">
-        ${item.description}
+        <p class="card-text" >
+        ${item.provenience}
         </p>
         <p class="card-text">
-        ${item.provenience}
+        ${item.description}
         </p>
         <a href="${item.url}" class="btn btn-primary">Click Here</a>
       </div>
     </div>
   </div>`;
-    col3.innerHTML = print4;
+    car3.innerHTML = print4;
   });
- 
-
-
-  
 };
 
-getData2();
+getBarang();
