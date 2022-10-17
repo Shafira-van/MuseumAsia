@@ -1,4 +1,5 @@
-﻿{
+[
+   {
    "emuIRN": "112554",
    "description": "Pau Liang Money",
    "provenience": ["China"],
@@ -357,3 +358,4 @@
    "curatorial_section": "Asian",
    "object_number": "A95A",
    "img":"https://upmaa-pennmuseum.netdna-ssl.com/collections/assets/48822_800.jpg"  }
+]
