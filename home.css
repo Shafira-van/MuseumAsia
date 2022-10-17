@@ -205,9 +205,9 @@ footer h2 {
 footer p {
   background-color: #3e3e3b;
   color: white;
-  margin-left: 2vw;
+  font-size: 1.4vw;
+  margin: 0vw 2vw;
 }
-
 @media only screen and (max-width: 480px) {
   .navbar-brand {
     font-size: 4vw;
