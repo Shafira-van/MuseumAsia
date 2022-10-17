@@ -40,11 +40,11 @@ getData();
 
 let getData2 = async () => {
   let response = await fetch(
-    `./D:/folder%20files/asian-20181028.json`
+    `https://raw.githubusercontent.com/Shafira-van/MuseumAsia/dev/developer.json`
   );
-  let movie = await response.json();
+  let movie2 = await response.json();
 
-  console.log(movie);
+  console.log(movie2);
   
 
 };
