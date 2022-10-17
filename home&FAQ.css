@@ -1,0 +1,162 @@
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(203, 197, 193, 0.6);
+  /* background-color: #a2aab0; */
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.navbar {
+  background-color: #4c586f;
+  margin-bottom: 4vw;
+  color : #ebeced;
+}
+.logo {
+    display: flex;
+}
+.navbar img{
+    width : 2vw;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    margin : 0vw 2vw;
+}
+
+.navbar-nav{
+  display: flex;
+  flex-direction: row; 
+}
+
+.navbar li{
+    margin : 1vw;
+}
+
+/* header */
+header {
+    
+    width: 100%;
+    height: auto;
+    padding: 2vw;
+  }
+
+  .konten {
+    display: flex;
+    align-items: center;
+  }
+
+  .header img {
+    width: 40%;
+    object-fit: cover;
+    padding: 0 6vw;
+  }
+    
+  .header h1 {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  .header p {
+   font-size: 3vw;
+  }
+
+  /* isi konten */
+  .carousel-inner .col{
+    display:flex;
+    justify-content: center;
+    margin:0;
+    padding:0;
+  }
+
+  .card a{
+    margin : 0 2vw;
+    width : 10vw;
+  }
+
+  .carousel-control-next{
+    padding-left: 4vw;
+    
+  }
+  .carousel-control-prev{
+    padding-right: 4vw;
+    
+  }
+
+ 
+  /* container */
+  h2 {
+    margin :2vw 11vw;
+
+  }
+  .container-dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 11vw;
+}
+    .container-dev #card-body{
+        text-align: left;
+    }
+
+    .container-dev .card{
+        width : 100%;
+    }
+
+    .container-dev #rowDev{
+        align-items: center;
+        display : flex;
+        flex-direction: row;
+    }
+    .col-md-4 img{
+        width : 30vw;
+    }
+
+
+  /* footer */
+footer {
+  padding: 0vw 2vw 0vw 2vw;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 4vw;
+  margin-bottom: 0;
+}
+footer h2{
+    color: white;
+    margin-left: 2vw;
+}
+footer p {
+  background-color: black;
+  color: white;
+  margin-left: 2vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar-brand {
+    font-size: 4vw;
+  }
+
+  .navbar input {
+    margin: 0vw 0;
+    width: auto;
+    font-size: 2.8vw;
+  }
+
+  .navbar button {
+    color: white;
+    border: 1px solid white;
+    width: auto;
+    font-size: 2.8vw;
+  }
+
+ 
