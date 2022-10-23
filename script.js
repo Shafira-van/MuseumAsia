@@ -100,7 +100,7 @@ function getMuseum(url) {
   lastUrl = url;
     fetch(url).then(res => res.json()).then(data => {
         console.log(data)
-        if(data.results.length !== 0){
+        if(data.length !== 0){
             showMuseum(data);
             currentPage = data.page;
             nextPage = currentPage + 1;
@@ -134,21 +134,21 @@ function showMuseum(data) {
   main.innerHTML = '';
 
   data.forEach(museum => {
-      const {title, poster_path, vote_average, overview, id} = museum;
+      const {description, img, object_name, provenience, url} = museum;
       const museum1 = document.createElement('div');
       museum1.classList.add('museum');
       museum1.innerHTML = `<div class="col">
       <div class="card" >
-        <img src="${item.img}" class="card-img-top" alt="..." />
+        <img src="${img}" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">${item.object_name}</h5>
+          <h5 class="card-title">${object_name}</h5>
           <p class="card-text" >
-          ${item.provenience}
+          ${provenience}
           </p>
           <p class="card-text" id="cardDesc">
-          ${item.description}
+          ${description}
           </p>
-          <a href="${item.url}" class="btn btn-primary">Show more</a>
+          <a href="${url}" class="btn btn-primary">Show more</a>
         </div>
       </div>
     </div>`
