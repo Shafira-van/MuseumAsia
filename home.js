@@ -59,7 +59,7 @@ let getBarang = async () => {
         <p class="card-text" id="cardDesc">
         ${item.description}
         </p>
-        <a href="${item.url}" class="btn btn-primary">Show more</a>
+        <a href="${item.url}" class="btn btn-secondary">Show more</a>
       </div>
     </div>
   </div>`;
@@ -80,7 +80,7 @@ let getBarang = async () => {
         <p class="card-text" id="cardDesc">
         ${item.description}
         </p>
-        <a href="${item.url}" class="btn btn-primary">Show more</a>
+        <a href="${item.url}" class="btn btn-secondary">Show more</a>
       </div>
     </div>
   </div>`;
@@ -101,7 +101,7 @@ let getBarang = async () => {
         <p class="card-text" id="cardDesc">
         ${item.description}
         </p>
-        <a href="${item.url}" class="btn btn-primary">Show more</a>
+        <a href="${item.url}" class="btn btn-secondary">Show more</a>
       </div>
     </div>
   </div>`;
@@ -110,38 +110,3 @@ let getBarang = async () => {
 };
 
 getBarang();
-
-// let negara = document.querySelector(".carousel-inner #row3");
-// let url ="https://634aa22e5df9528514155265.mockapi.io/webDev/fe28/negara"
-
-// async function searchData(){
-//   let response = await fetch(url)
-//   let result = await response.json()
-//   let print5=""
-//   let data4 ="China"
-//   let hasilPencarian=[]
-//   result.forEach((item)=>{
-//     if(item.provenience.includes(data4)) {
-//       hasilPencarian.push(item)
-//       print5 += `<div class="col">
-//       <div class="card" >
-//         <img src="${item.img}" class="card-img-top" alt="..." />
-//         <div class="card-body">
-//           <h5 class="card-title">${item.object_name}</h5>
-//           <p class="card-text" >
-//           ${item.provenience}
-//           </p>
-//           <p class="card-text" id="cardDesc">
-//           ${item.description}
-//           </p>
-//           <a href="${item.url}" class="btn btn-primary">Show more</a>
-//         </div>
-//       </div>
-//     </div>`;
-//       negara.innerHTML = print5;
-//     }
-//   })
-//   console.log(hasilPencarian)
-// }
-
-// searchData()

@@ -310,6 +310,9 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) and (max-width : 1032px) {
+  .navbar-nav li{
+    font-size: 2vw;
+  }
   .carousel-control-prev-icon{
     visibility: hidden;
   }
