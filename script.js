@@ -21,7 +21,7 @@ const register = async() => {
     if(postUser.status === 201){
         console.log("berhasil terdaftar")
         alert("Berhasil Terdaftar, silahkan login kembali")
-        location.href="sign-in.html"
+        location.href="index.html"
     } else{
         console.log("maaf, terjadi masalah. Silahkan daftar ulang")
     }

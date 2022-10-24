@@ -262,6 +262,9 @@ footer p {
   .nav-item a{
     font-size: 3.2vw;
   }
+  .profile p{
+    font-size: 3.2vw;
+  }
   .carousel-inner .col {
     width : auto;
     padding: 0 0vw;
@@ -335,6 +338,9 @@ footer p {
 
 @media only screen and (min-width: 768px) and (max-width : 1032px) {
   .navbar-nav li{
+    font-size: 2vw;
+  }
+  .nama_profil p{
     font-size: 2vw;
   }
   .carousel-control-prev-icon{

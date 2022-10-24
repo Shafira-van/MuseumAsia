@@ -219,7 +219,9 @@ footer p {
   .nav-item a {
     font-size: 3.2vw;
   }
-
+  .profile p{
+    font-size: 3.2vw;
+  }
   header {
     margin: 2vw;
   }
@@ -293,6 +295,9 @@ footer p {
     height: 4vw;
     width: auto;
     font-size: 2.4vw;
+  }
+  .nama_profil p{
+    font-size: 2vw;
   }
   header .btn {
     height: 4vw;
