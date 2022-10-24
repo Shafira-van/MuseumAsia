@@ -40,10 +40,35 @@
                   <!-- End form password -->
                   <!-- Button Submit -->
                   <div class="mt-5 d-flex  justify-content-center">
-                     <button type="submit" id="buttonSubmit" class="btn btn-primary" style="background-color: #3e3e3b; border: none; width: 362px;">Daftar</button>
+                     <button type="submit" id="buttonSubmit" class="btn btn-primary" style="background-color: #3e3e3b; border: none; width: 200px;">Masuk</button>
                   </div>
                 </form>
-                <div id="massage">
+                <a href="signUp.html" class=" d-flex  justify-content-center mt-2 text-decoration-none">
+                  <button type="submit" id="buttonSubmit" class="btn btn-primary" style="background-color: #3e3e3b; border: none; width: 200px;">Daftar</button>
+                </a>
+
+                <!-- Create Modal -->
+                <div id="popUp">
+                  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                          <button type="button" id="button-signIn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Show a second modal and hide this one with the button below.
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary">Open second modal</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- End Modal -->
+                <div id="massage" class="text-center" style="color: red;">
                 </div>
               </div>
             </div>
