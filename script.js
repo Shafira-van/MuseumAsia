@@ -23,7 +23,7 @@ const register = async() => {
         localStorage.setItem('userName', userNameSignUp.value);
         localStorage.setItem('pw', passwordSignUp.value);
         localStorage.setItem('email', emailSignUp.value);
-        massage.innerHTML = `<p>Berhasil Terdaftar, silahkan login kembali</p>`
+        alert("Berhasil Terdaftar, silahkan login kembali")
     } else{
         console.log("maaf, terjadi masalah. Silahkan daftar ulang")
     }
