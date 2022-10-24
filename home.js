@@ -59,7 +59,7 @@ let getBarang = async () => {
         <p class="card-text" id="cardDesc">
         ${item.description}
         </p>
-        <a href="${item.url}" class="btn btn-primary">Show more</a>
+        <a href="${item.url}" class="btn btn-secondary">Show more</a>
       </div>
     </div>
   </div>`;
@@ -80,7 +80,7 @@ let getBarang = async () => {
         <p class="card-text" id="cardDesc">
         ${item.description}
         </p>
-        <a href="${item.url}" class="btn btn-primary">Show more</a>
+        <a href="${item.url}" class="btn btn-secondary">Show more</a>
       </div>
     </div>
   </div>`;
@@ -101,7 +101,7 @@ let getBarang = async () => {
         <p class="card-text" id="cardDesc">
         ${item.description}
         </p>
-        <a href="${item.url}" class="btn btn-primary">Show more</a>
+        <a href="${item.url}" class="btn btn-secondary">Show more</a>
       </div>
     </div>
   </div>`;
