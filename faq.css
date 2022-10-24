@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  
+}
+
+body {
+  background-color: rgb(203, 197, 193, 0.6);
+  /* background-color: #a2aab0; */
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  color: #3e3e3b;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: #4c586f;
+  color: #ebeced;
+  font-size: 1.6vw;
+  padding: 0vw 2vw;
+}
+
+.logo {
+  display: flex;
+
+}
+
+
+.navbar img {
+  width: 4vw;
+  height : auto;
+}
+
+.navbar-brand{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0.6vw;
+  object-fit: cover ;
+}
+
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar li {
+  margin: 1vw;
+}
+
+.container-fluid {
+    padding : 0 0;
+}
+/* article */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0vw;
+}
+article h1 {
+    text-align: center;
+    font-size: 6vw;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+article h2{
+    font-size: 2vw;
+}
+.accordion{
+  margin-bottom: 4vw;
+}
+.accordion-item{
+    width : 50vw;
+    margin : 0vw;
+}
+
+.accordion-item button{
+    background-color: #a2aab0;
+    border:1px solid #a2aab0;
+    font-size: 2vw;
+    color : white;
+}
+
+.accordion-collapse{
+    background-color: #ebeced;
+    font-size: 1.6vw;
+}
+
+/* footer */
+footer {
+    padding: 0vw 2vw 0vw 2vw;
+    background-color: #3e3e3b;
+    height: auto;
+    width: 100%;
+    margin-top: 4vw;
+    padding-bottom: 2vw;
+    position: relative;
+  margin-top: auto;
+  margin-bottom: 0;
+  }
+  
+  footer h2 {
+    margin-top: 2vw;
+    color: white;
+    margin-left: 2vw;
+  }
+  
+  footer p {
+    background-color: #3e3e3b;
+    color: white;
+    font-size: 1.4vw;
+    margin: 0vw 2vw;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .logo img{
+      width:5vw;
+      height: auto;
+    }
+    .navbar-brand a{
+      font-size: 2.4vw;
+      margin-bottom: 0;
+    }
+    .nav-item a{
+      font-size: 3.2vw;
+    }
+
+    .accordion-item{ 
+      width : 60vw;
+      
+    }
+
+    .accordion-header button{
+      font-size: 3vw;
+      margin : 0;
+    }
+    .accordion-body {
+      font-size: 2.4vw;
+  
+    }
+    .accordion-body ul{
+      padding-left: 3.4vw;
+      margin-bottom: 0vw;
+    }
+    footer p{
+      font-size: 2.4vw;
+    }
+  }
+
+  
+@media only screen and (min-width: 768px) and (max-width : 1032px) {
+  .navbar-nav li{
+    font-size: 2vw;
+  }
+}
