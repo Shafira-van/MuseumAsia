@@ -2,6 +2,7 @@ let negara = document.querySelector(".container-dev");
 let text = document.querySelector(".text_negara");
 let formCari = document.querySelector("#form");
 let cari = document.querySelector("#cari");
+let nama = document.querySelector(".nama_profil");
 let url ="https://634aa22e5df9528514155265.mockapi.io/webDev/fe28/negara"
 let data1 ="Burma"
 let data2 ="China"
@@ -10,6 +11,8 @@ let data4 ="Indonesia"
 let data5 ="Japan"
 let data6 ="Korea"
 
+
+nama.innerHTML = `<p>${localStorage.getItem("username")}<p>`;
 async function asia(){
     let response = await fetch(url)
     let result = await response.json()

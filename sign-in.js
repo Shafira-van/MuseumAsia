@@ -9,14 +9,21 @@ const signIn =async() => {
     let found = result.find(element => {
         return userName.value === element.userName && password.value === element.Password
     }); 
+
+
+
     console.log(found)
 
     if(!found){
         console.log("gagal");
-        alert ("username dan password anda belum terdaftar, silahkan mendaftar")
+        alert ("username dan password anda belum terdaftar, silahkan SignUp")
     }else {
-        console.log("berhasil");
-        window.open("home.html", "_self");
+        JSON.stringify(found)
+        localStorage.setItem('username', userName.value);
+        localStorage.setItem('pw', password.value);
+        location.href="home.html"
+       
+       
     }  
    
 

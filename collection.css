@@ -58,6 +58,30 @@ body {
 .container-fluid {
     padding : 0 0;
 }
+
+
+.isiKonten {
+  display :flex;
+  align-items: center;
+}
+.profile {
+  display : flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left : 2vw;
+}
+.profile img{
+  border-radius: 50%;
+  margin:0vw 0;
+  width: 3vw;
+}
+.nama_profil{
+  margin-left : 0.6vw;
+}
+.nama_profil p{
+  margin-bottom: 0;
+  color : #b3cee5;
+}
 /* search */
 header {
   display: flex;

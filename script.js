@@ -20,10 +20,8 @@ const register = async() => {
 
     if(postUser.status === 201){
         console.log("berhasil terdaftar")
-        localStorage.setItem('userName', userNameSignUp.value);
-        localStorage.setItem('pw', passwordSignUp.value);
-        localStorage.setItem('email', emailSignUp.value);
         alert("Berhasil Terdaftar, silahkan login kembali")
+        location.href="sign-in.html"
     } else{
         console.log("maaf, terjadi masalah. Silahkan daftar ulang")
     }

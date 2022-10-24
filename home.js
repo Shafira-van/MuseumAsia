@@ -1,4 +1,7 @@
 let dev = document.querySelector(".container-dev");
+let nama = document.querySelector(".nama_profil");
+
+nama.innerHTML = `<p>${localStorage.getItem("username")}<p>`;
 
 let getProfil = async () => {
   let response = await fetch(
