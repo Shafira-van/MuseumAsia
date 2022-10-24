@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
 html,
 body {
   height: 100%;
@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
+  
 }
 
 body {
@@ -15,37 +16,35 @@ body {
   display: flex;
   flex-direction: column;
   color: #3e3e3b;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
   background-color: #4c586f;
-  margin-bottom: 2vw;
   color: #ebeced;
   font-size: 1.6vw;
+  padding: 0vw 2vw;
 }
 
 .logo {
   display: flex;
+
 }
+
 
 .navbar img {
   width: 4vw;
-  height: auto;
+  height : auto;
 }
 
-.navbar-brand {
-  display: flex;
+.navbar-brand{
+  display : flex;
   flex-direction: column;
   align-items: center;
   margin-left: 0.6vw;
-  object-fit: cover;
+  object-fit: cover ;
 }
-.container-fluid {
-  display: flex;
-  justify-content: space-between;
-  margin: 0vw 2vw;
-}
+
 
 .navbar-nav {
   display: flex;
@@ -55,12 +54,16 @@ body {
 .navbar li {
   margin: 1vw;
 }
+
+.container-fluid {
+    padding : 0 0;
+}
 /* search */
 header {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 0vw 2vw 2vw 2vw;
+  margin: 2vw 2vw 2vw 2vw;
 }
 #form {
   align-items: center;
